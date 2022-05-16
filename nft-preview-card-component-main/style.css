@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 22rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.top {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.top img{
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top:hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper h2 {
+    text-align: left;
+    margin: 1rem 1rem 1rem 0;
+    font-weight: 600;
+}
+
+.wrapper p{
+    text-align: left;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-1 p{
+    margin: 1rem 0 1rem 0;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.footer-1 p img{
+    float: left;
+    margin: 3px 4px 0 0;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.footer-2 {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.footer-2 p {
+    font-weight: 300;
+}
+
+.footer-2 img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.container a{
+    color: white;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+}
+
+.attribution p {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a{
+    font-weight: 600;
+}
