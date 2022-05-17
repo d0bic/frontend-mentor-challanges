@@ -51,7 +51,8 @@ body {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 4rem;
+    bottom: 0.5rem;
+    font-size: 300;
 }
 
 .attribution p{
