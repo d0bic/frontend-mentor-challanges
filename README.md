@@ -9,3 +9,5 @@
 #### qr-code-component [live here](https://qr-code-component-aiq.pages.dev/)
 
 #### nft-preview-card-component [live here](https://nft-preview-card-component-4m2.pages.dev/)
+
+#### 3-column-preview-card-component [live here](https://3-column-preview-card-component-9bf.pages.dev/)
