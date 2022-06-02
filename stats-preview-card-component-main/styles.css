@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;     
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.first-card {
+    padding: 11%;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.violet {
+    color: hsl(277, 64%, 61%);
+}
+
+.para {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-right: 3rem;
+}
+
+.cards {
+    line-height: 2.4rem;
+}
+
+.head {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1.2rem;
+}
+
+.second-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.second-card {
+    position: relative;
+}
+
+.second-card::after {
+    content: '';
+    position: absolute;
+    background-color: hsl(277, 79%, 44%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 3rem;
+}
+
+.attribution p {
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution a:visited {
+    color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        text-align: center;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .first-card {
+        padding: 10%;
+    }
+
+    .second-card {
+        order: -1;
+    }
+
+    .para {
+        padding: 8%;
+    }
+
+    .flex {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .cards {
+        margin: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
